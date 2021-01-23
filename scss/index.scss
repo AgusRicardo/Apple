@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+}
+form img {
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.cards {
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: 25px;
+    .card {
+        padding: 10px;
+        margin: 20px;
+    }
+}
