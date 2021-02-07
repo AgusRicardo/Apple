@@ -1,5 +1,9 @@
 
 let carrito = [];
+if (localStorage.getItem('carrito') != null) {
+    carrito = JSON.parse(localStorage.getItem('carrito'));
+    document.getElementById('contador').innerHTML = `Falso carrito: ${carrito.length} productos`;
+}
 
 class Producto {
     constructor(nombreMarca, precioProducto, stockProducto, imagenProducto){
@@ -7,9 +11,6 @@ class Producto {
         this.precio = precioProducto;
         this.stock = stockProducto;
         this.imagen = imagenProducto;
-    }
-    mostrarProductosEnPantalla(){
-        document.getElementById('carrito').innerHTML = ``;
     }
 }
 
@@ -38,11 +39,21 @@ for (let i = 0; i < baseDeDatos.length; i++) {
         <h4 class="card-title">${baseDeDatos[i].nombre}</h4>
         <h5 class="card-text">${baseDeDatos[i].precio}</h5>
         <p>Cantidad en stock: ${baseDeDatos[i].stock}</p>
-        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        <a href="#" class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[i])})'>Agregar al carrito</a>
         </div>
         </div>
         `;
     }
 }
 document.getElementById('productos').innerHTML = aux;
-console.log(aux);
+
+
+function agregarAlCarrito (producto) {
+    carrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+    let aux = 0
+    for (let i = 0; i < carrito.length; i++) {
+        aux += carrito[i].precio
+    }
+    document.getElementById('contador').innerHTML = `Falso carrito: ${carrito.length} productos`;
+}
