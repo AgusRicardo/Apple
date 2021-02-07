@@ -119,7 +119,7 @@ form img {
   margin-bottom: 0; }
 
 .img-portada {
-  background-image: url("/img/carousel/iphone12.jpg");
+  background-image: url("../img/carousel/iphone12.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
