@@ -2,7 +2,7 @@
 let carrito = [];
 if (localStorage.getItem('carrito') != null) {
     carrito = JSON.parse(localStorage.getItem('carrito'));
-    document.getElementById('contador').innerHTML = `Falso carrito: ${carrito.length} productos`;
+    document.getElementById('contador').innerHTML = `${carrito.length}`;
 }
 
 class Producto {
@@ -29,23 +29,194 @@ baseDeDatos.push(producto3);
 baseDeDatos.push(producto4);
 baseDeDatos.push(producto5);
 
-let aux = ``
+let pageMac = document.getElementById('pageMac');
+let pageIpad = document.getElementById('pageIpad');
+let pageIphone = document.getElementById('pageIphone');
+let pageWatch = document.getElementById('pageWatch');
+let pageMusic = document.getElementById('pageMusic');
+let loading = document.getElementById('loading');
+
+// Productos Mac
+let btnMac = document.getElementById('btn-mac').addEventListener('click', function (e) {
+    e.preventDefault()
+    loading.style.display = 'flex';
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    setTimeout(() => {
+        pageMac.style.display = 'block';
+        pageIpad.style.display = 'none';
+        pageIphone.style.display = 'none';
+        pageWatch.style.display = 'none';
+        pageMusic.style.display = 'none';
+        loading.style.display = 'none'
+    }, 1200);
+})
+let auxMac = ``
 for (let i = 0; i < baseDeDatos.length; i++) {
     if (baseDeDatos[i].stock > 0) {
-        aux += `
+        auxMac += `
         <div class="card" style="width: 18rem;">
-        <img src="${baseDeDatos[i].imagen}" class="card-img-top" alt="...">
+        <img src="${baseDeDatos[0].imagen}" class="card-img-top" alt="...">
         <div class="card-body">
-        <h4 class="card-title">${baseDeDatos[i].nombre}</h4>
-        <h5 class="card-text">${baseDeDatos[i].precio}</h5>
-        <p>Cantidad en stock: ${baseDeDatos[i].stock}</p>
-        <a href="#" class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[i])})'>Agregar al carrito</a>
+        <h4 class="card-title">${baseDeDatos[0].nombre}</h4>
+        <h5 class="card-text">${baseDeDatos[0].precio}</h5>
+        <p>Cantidad en stock: ${baseDeDatos[0].stock}</p>
+        <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[0])})'>Agregar al carrito</a>
         </div>
         </div>
         `;
     }
 }
-document.getElementById('productos').innerHTML = aux;
+document.getElementById('productos-mac').innerHTML = auxMac;
+
+// Productos iPad
+let btnIpad = document.getElementById('btn-ipad').addEventListener('click', function (e) {
+    e.preventDefault()
+    loading.style.display = 'flex'
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    setTimeout(() => {
+        pageMac.style.display = 'none';
+        pageIpad.style.display = 'block';
+        pageIphone.style.display = 'none';
+        pageWatch.style.display = 'none';
+        pageMusic.style.display = 'none';
+        loading.style.display = 'none'
+    }, 1200);
+})
+let auxIpad = ``
+for (let i = 0; i < baseDeDatos.length; i++) {
+    if (baseDeDatos[i].stock > 0) {
+        auxIpad += `
+        <div class="card" style="width: 18rem;">
+        <img src="${baseDeDatos[3].imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h4 class="card-title">${baseDeDatos[3].nombre}</h4>
+        <h5 class="card-text">${baseDeDatos[3].precio}</h5>
+        <p>Cantidad en stock: ${baseDeDatos[3].stock}</p>
+        <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[3])})'>Agregar al carrito</a>
+        </div>
+        </div>
+        `;
+    }
+}
+document.getElementById('productos-ipad').innerHTML = auxIpad;
+
+// Productos iPhone
+let btnIphone = document.getElementById('btn-iphone').addEventListener('click', function (e) {
+    e.preventDefault()
+    loading.style.display = 'flex'
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    setTimeout(() => {
+        pageMac.style.display = 'none';
+        pageIpad.style.display = 'none';
+        pageIphone.style.display = 'block';
+        pageWatch.style.display = 'none';
+        pageMusic.style.display = 'none';
+        loading.style.display = 'none'
+    }, 1200);
+})
+let auxIphone = ``
+for (let i = 0; i < baseDeDatos.length; i++) {
+    if (baseDeDatos[i].stock > 0) {
+        auxIphone += `
+        <div class="card" style="width: 18rem;">
+        <img src="${baseDeDatos[1].imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h4 class="card-title">${baseDeDatos[1].nombre}</h4>
+        <h5 class="card-text">${baseDeDatos[1].precio}</h5>
+        <p>Cantidad en stock: ${baseDeDatos[1].stock}</p>
+        <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[1])})'>Agregar al carrito</a>
+        </div>
+        </div>
+        `;
+    }
+}
+document.getElementById('productos-iphone').innerHTML = auxIphone;
+
+// Productos Watch
+let btnWatch = document.getElementById('btn-watch').addEventListener('click', function (e) {
+    e.preventDefault()
+    loading.style.display = 'flex'
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    setTimeout(() => {
+        pageMac.style.display = 'none';
+        pageIpad.style.display = 'none';
+        pageIphone.style.display = 'none';
+        pageWatch.style.display = 'block';
+        pageMusic.style.display = 'none';
+        loading.style.display = 'none'
+    }, 1200);
+})
+let auxWatch = ``
+for (let i = 0; i < baseDeDatos.length; i++) {
+    if (baseDeDatos[i].stock > 0) {
+        auxWatch += `
+        <div class="card" style="width: 18rem;">
+        <img src="${baseDeDatos[2].imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h4 class="card-title">${baseDeDatos[2].nombre}</h4>
+        <h5 class="card-text">${baseDeDatos[2].precio}</h5>
+        <p>Cantidad en stock: ${baseDeDatos[2].stock}</p>
+        <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[2])})'>Agregar al carrito</a>
+        </div>
+        </div>
+        `;
+    }
+}
+document.getElementById('productos-watch').innerHTML = auxWatch;
+
+// Productos Music
+let btnMusic = document.getElementById('btn-music').addEventListener('click', function (e) {
+    e.preventDefault()
+    loading.style.display = 'flex'
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    setTimeout(() => {
+        pageMac.style.display = 'none';
+        pageIpad.style.display = 'none';
+        pageIphone.style.display = 'none';
+        pageWatch.style.display = 'none';
+        pageMusic.style.display = 'block';
+        loading.style.display = 'none'
+    }, 1200);
+})
+let auxMusic = ``
+for (let i = 0; i < baseDeDatos.length; i++) {
+    if (baseDeDatos[i].stock > 0) {
+        auxMusic += `
+        <div class="card" style="width: 18rem;">
+        <img src="${baseDeDatos[4].imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h4 class="card-title">${baseDeDatos[4].nombre}</h4>
+        <h5 class="card-text">${baseDeDatos[4].precio}</h5>
+        <p>Cantidad en stock: ${baseDeDatos[4].stock}</p>
+        <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(baseDeDatos[4])})'>Agregar al carrito</a>
+        </div>
+        </div>
+        `;
+    }
+}
+document.getElementById('productos-music').innerHTML = auxMusic;
+
+
 
 
 function agregarAlCarrito (producto) {
@@ -55,5 +226,5 @@ function agregarAlCarrito (producto) {
     for (let i = 0; i < carrito.length; i++) {
         aux += carrito[i].precio
     }
-    document.getElementById('contador').innerHTML = `Falso carrito: ${carrito.length} productos`;
+    document.getElementById('contador').innerHTML = `${carrito.length}`;
 }

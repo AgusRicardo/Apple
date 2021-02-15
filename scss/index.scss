@@ -1,20 +1,15 @@
 @import "./productos.scss";
+@import "./loading.scss";
 
 // Colores
 $color-nav: #575757;
 $color-nav-fixed: #b2b2b2;
 $color-body: #f2f2f2;
 
-// Pág de referencia
-// https://colorswall.com/palette/40133/
-// https://www.color-hex.com/color-palette/2337
-
 // Colors-bts
 $color-red: #ff3b30;
 $color-yellow: #ffcc00;
 $color-green: #4cd964;
-
-
 
 
 body {
@@ -108,10 +103,11 @@ form img {
     align-items: center;
     width: 100%;
     background-color: $color-nav-fixed;
-    position: sticky;
     .nav_iconos_img {
         padding: 3px;
         margin-right: 30px;
+        display: flex;
+        align-items: center;
     }
     img {
         width: 32px;
@@ -121,8 +117,17 @@ form img {
     img:hover {
         background-color: rgba(0, 0, 0, .1);
     }
+    .carrito-img {
+        margin-right: 0;
+    }
+    b{
+        background-color: white;
+        border-radius: 30px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+    }
 }
-
 // Carousel
 .carousel-item {
     background: no-repeat center center scroll;
@@ -169,7 +174,7 @@ form img {
 
 // IMG Portada
 .img-portada {
-    background-image: url('../img/carousel/iphone12.jpg');
+    background-image: url('../img/portadas/iphone.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;

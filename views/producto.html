@@ -27,19 +27,19 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03" >
                             <ul class="navbar-nav  mb-2 mb-lg-0 nav_menu">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Mac</a>
+                                    <a class="nav-link" href="/views/producto.html" id="btn-mac">Mac</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">iPhone</a>
+                                    <a class="nav-link" href="/views/producto.html" id="btn-ipad">iPad</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Watch</a>
+                                    <a class="nav-link" href="/views/producto.html" id="btn-iphone">iPhone</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Tv</a>
+                                    <a class="nav-link" href="/views/producto.html" id="btn-watch">Watch</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Music</a>
+                                    <a class="nav-link" href="/views/producto.html" id="btn-music">Music</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Support</a>
@@ -51,24 +51,95 @@
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
                 <div class="nav_iconos">
                     <div class="nav_iconos_img">
                         <img src="../img/icon/icon-search.svg" alt="">
                         <img src="../img/icon/icon-love.svg" alt="">
-                        <img src="../img/icon/icon-buy.svg" alt="">
+                        <img src="../img/icon/icon-buy.svg" alt="" class="carrito-img">
+                            <b id="contador">0</b>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- IMG, Cards, Accesorios  -->
-    <section>
-        <div id="falsoCarrito">
-            <b id="contador">Falso carrito: 0 productos</b>
+    <section id="loading">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="loadingio-spinner-spinner-lhbmy5xmbg"><div class="ldio-k6nxrksftq">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="productos"></div>
     </section>
-    <footer></footer>
+    <!-- IMG, Cards, Accesorios  -->
+    <section id="pageMac">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-portada-mac"></div>
+            </div>
+            <div id="productos-mac" class="productos"></div>
+        </div>
+    </section>
+    <section id="pageIpad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-portada-ipad"></div>
+                <div id="productos-ipad" class="productos"></div>
+            </div>
+        </div>
+    </section>
+    <section id="pageIphone">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-portada-iphone"></div>
+                <div id="productos-iphone" class="productos"></div>
+            </div>
+        </div>
+    </section>
+    <section id="pageWatch">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-portada-watch"></div>
+                <div id="productos-watch" class="productos"></div>
+            </div>
+        </div>
+    </section>
+    <section id="pageMusic">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-portada-music"></div>
+                <div id="productos-music" class="productos"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-txt">
+                    <div>
+                        Productos
+                    </div>
+                    <div>
+                        Servicios
+                    </div>
+                    <div>
+                        App Store
+                    </div>
+                    <div>
+                        Trabaja con nosotros
+                    </div>
+                    <div>
+                        ¿Quienes somos?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Scrips -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

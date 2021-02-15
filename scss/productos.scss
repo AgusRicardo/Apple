@@ -1,10 +1,77 @@
 
-#productos {
+// Pages
+#pageMac, #pageIpad, #pageIphone, #pageWatch, #pageMusic, #loading {
+    display: none;
+}
+
+#falsoCarrito {
+    text-align: center;
+}
+
+// Page Mac
+.img-portada-mac {
+    background-image: url('/img/portadas/macbook_.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+.productos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
-#falsoCarrito {
-    text-align: center;
+
+// Page iPad
+.img-portada-ipad {
+    background-image: url('/img/portadas/ipad.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+}
+
+// Page iPhone
+.img-portada-iphone {
+    background-image: url('/img/carousel/iphone12.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+// Page Watch
+.img-portada-watch {
+    background-image: url('/img/portadas/watch.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+}
+
+
+// Page Tv
+.img-portada-tv {
+    background-image: url('/img/carousel/iphone12.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+// Page Music
+.img-portada-music {
+    background-image: url('/img/portadas/music.jpg');
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
