@@ -288,8 +288,7 @@ form img {
   background-image: url("../img/portadas/iphone.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
-  background-attachment: fixed; }
+  height: 300px; }
 
 .iconos-grandes {
   margin-top: 100px;
