@@ -1,9 +1,6 @@
 #pageMac, #pageIpad, #pageIphone, #pageWatch, #pageMusic, #loading {
   display: none; }
 
-#falsoCarrito {
-  text-align: center; }
-
 .img-portada-mac {
   background-image: url("../img/portadas/macbook_.jpg");
   height: 85vh;
@@ -34,6 +31,40 @@
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.portadaProductoIphone {
+  background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-gallery1-2020?wid=1069&hei=407&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601602934000");
+  height: 370px;
+  background-position: center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #aecbd9; }
+
+.margin {
+  margin-top: 100px;
+  text-align: center; }
+
+.accesorios {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); }
+  .accesorios .accesorioIphone1 {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1604002057000");
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding: 10px;
+    background-position: center center; }
+  .accesorios .accesorioIphone2 {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHLT3_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1602883839000");
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    padding: 10px;
+    background-position: center center; }
+
 .img-portada-watch {
   background-image: url("../img/portadas/watch.jpg");
   height: 85vh;
@@ -58,9 +89,16 @@
   background-size: cover; }
 
 #loading {
-  display: flex;
+  display: none;
   align-items: center;
   text-align: center; }
+
+.loading-settings {
+  display: flex;
+  height: 80vh;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
 
 .fa-apple {
   font-size: 200px;
@@ -242,20 +280,36 @@ form img {
     margin-right: 30px;
     display: flex;
     align-items: center; }
-  .nav_iconos img {
+  .nav_iconos .imgSearch, .nav_iconos .imgLove {
     width: 32px;
     margin: 0px 10px 0px 10px;
     cursor: pointer; }
-  .nav_iconos img:hover {
+  .nav_iconos .imgNavHover:hover {
     background-color: rgba(0, 0, 0, 0.1); }
   .nav_iconos .carrito-img {
     margin-right: 0; }
-  .nav_iconos b {
+
+.changuito:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.changuito:focus {
+  outline: none;
+  border: none; }
+
+.changuito {
+  border: none;
+  background-color: #b2b2b2;
+  width: 80px;
+  text-align: start;
+  padding-left: 0; }
+  .changuito img {
+    width: 32px;
+    margin: 0px 0px 0px 10px; }
+  .changuito b {
     background-color: white;
     border-radius: 30px;
-    width: 25px;
-    height: 25px;
-    text-align: center; }
+    padding: 5px;
+    font-size: 14px; }
 
 .carousel-item {
   background: no-repeat center center scroll;
@@ -271,12 +325,16 @@ form img {
   .frase h4 {
     max-width: 1100px; }
 
+.sidenav {
+  width: 550px; }
+
 .mas-vendidos-title {
   margin-top: 100px;
   text-align: center; }
 
 .carousel-mas-vendido img {
-  width: 500px; }
+  margin-right: 100px;
+  margin-left: 100px; }
 
 .preguntas-title, .preguntas-text {
   text-align: center; }
@@ -307,9 +365,40 @@ form img {
   flex-flow: row wrap;
   justify-content: space-evenly; }
 
+footer {
+  background-color: #b2b2b2;
+  margin-top: 100px; }
+  footer hr {
+    margin-bottom: 0; }
+
 .footer-txt {
-  background-color: #575757;
-  margin-top: 100px;
+  background-color: #b2b2b2;
+  padding-top: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly; }
+  .footer-txt h5 {
+    font-size: 16px; }
+  .footer-txt li {
+    list-style: none;
+    font-size: 14px; }
+    .footer-txt li a {
+      color: #212529;
+      text-decoration: none; }
+    .footer-txt li a:hover {
+      text-decoration: underline; }
+
+.copyProyecto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.copy, .proyecto {
+  margin-top: 10px;
+  text-align: center;
+  padding: 8px; }
+  .copy h5, .proyecto h5 {
+    font-size: 14px; }
+
+.proyecto h5 {
+  font-size: 14px; }

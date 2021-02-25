@@ -4,9 +4,6 @@
     display: none;
 }
 
-#falsoCarrito {
-    text-align: center;
-}
 
 // Page Mac
 .img-portada-mac {
@@ -43,7 +40,42 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+.portadaProductoIphone {
+    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-gallery1-2020?wid=1069&hei=407&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601602934000');
+    height: 370px;
+    background-position: center center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(174,203,217,255);
+}
+.margin{
+    margin-top: 100px;
+    text-align: center;
+}
+.accesorios{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    .accesorioIphone1{
+        background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1604002057000');
+        height: 400px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        padding: 10px;
+        background-position: center center;
+    }
+    .accesorioIphone2{
+        background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHLT3_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1602883839000');
+        height: 400px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: 350px;
+        padding: 10px;
+        background-position: center center;
+    }
+}
 
 // Page Watch
 .img-portada-watch {

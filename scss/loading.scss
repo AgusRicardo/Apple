@@ -1,7 +1,14 @@
 #loading {
-    display: flex;
+    display: none;
     align-items: center;
     text-align: center;
+}
+.loading-settings {
+    display: flex;
+    height: 80vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 .fa-apple {
     font-size: 200px;
