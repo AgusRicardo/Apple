@@ -45,7 +45,6 @@ form img {
 .header_nav {
     background-color: $color-nav;
     .nav_logo {
-        // box-shadow: 1px 1px 10px rgba(0,0,0,.50);
         margin-right: 30px;
     }
     .nav_logo:hover {
@@ -92,7 +91,10 @@ form img {
             font-size: 20px;
         }
         a:hover{
-            opacity: 0.3;
+            color: black;
+        }
+        .nav-link{
+            padding: 0;
         }
     }
 }
@@ -167,8 +169,39 @@ form img {
 // PageCarrito
 .sidenav{
     width: 550px;
+    .tittleCarrito{
+        background-color: $color-nav;
+        color: white;
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+        a{
+            margin-right: 25px;
+        }
+    }
 }
-
+.buttonsCarrito {
+    text-align: end;
+}
+.comprar{
+    background-color: $color-green;
+    color: white;
+    margin: 8px 12px 8px 0px;
+    &:hover{
+    background-color: $color-nav-fixed;
+    color: black;
+    }
+}
+.vaciarCarrito{
+    background-color: $color-red;
+    color: white;
+    margin: 8px;
+    font-size: 12px;
+    &:hover{
+        background-color: $color-nav-fixed;
+        color: black;
+    }
+}
 // Cards index
 
 // Mas vendidos

@@ -1,5 +1,4 @@
 
-
 let pageMac = document.getElementById('pageMac');
 let pageIpad = document.getElementById('pageIpad');
 let pageIphone = document.getElementById('pageIphone');

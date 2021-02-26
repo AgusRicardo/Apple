@@ -25,20 +25,26 @@ $(document).ready(function(){
 
 // Para que se muestren los productos en el carrito
 function mostrarCarrito() {
+    document.getElementById('navFix').style.position= 'unset';
     let auxCarrito = ``
-    for (let i = 0; i < carrito.length; i++) {
-        auxCarrito += `
-        <table class="table">
-        <tbody>
-        <tr>
-            <th scope="row">${carrito[i].imagen}</th>
+        for (let i = 0; i < carrito.length; i++) {
+            auxCarrito += `
+            <table class="table">
+            <tbody>
+            <tr>
+            <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
             <td>${carrito[i].nombre}</td>
             <td>${carrito[i].precio}</td>
-        </tr>
-        </tbody>
-        </table>
-        `
+            </tr>
+            </tbody>
+            `
     }
-    document.getElementById('slide-out').innerHTML = auxCarrito ;
+    document.getElementById('productoEnCarrito').innerHTML = auxCarrito ;
 }
 
+function vaciarElCarrito() {
+    let contador = document.getElementById('contador')
+        carrito= [];
+        localStorage.clear()
+        mostrarCarrito()
+}
