@@ -22,6 +22,11 @@ $(document).ready(function(){
     });
 });
 
+function goToId() {
+    const element = document.getElementById('body');
+    element.scrollIntoView({behavior: "smooth"});
+}
+
 
 // Para que se muestren los productos en el carrito
 function mostrarCarrito() {
@@ -29,22 +34,33 @@ function mostrarCarrito() {
     let auxCarrito = ``
         for (let i = 0; i < carrito.length; i++) {
             auxCarrito += `
-            <table class="table">
-            <tbody>
             <tr>
             <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
             <td>${carrito[i].nombre}</td>
+            <td>1</td>
             <td>${carrito[i].precio}</td>
+            <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
             </tr>
-            </tbody>
             `
     }
     document.getElementById('productoEnCarrito').innerHTML = auxCarrito ;
 }
 
+
+
 function vaciarElCarrito() {
     let contador = document.getElementById('contador')
-        carrito= [];
+        carrito = [];
         localStorage.clear()
         mostrarCarrito()
+        contador.innerHTML ='0'
 }
+
+function eliminarProducto() {
+    for (let i = 0; i < carrito.length; i++) {
+        console.log('llega hasta aca');
+        localStorage.removeItem(i)
+    }
+}
+
+
