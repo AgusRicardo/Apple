@@ -36,7 +36,7 @@ fetch('baseDeDatos.json')
     for (let i = 0; i < (res.macbooks).length; i++) {
         auxMac += `
             <div class="card" style="width: 18rem;">
-            <img src="${(res.macbooks[i]).imagen}" class="card-img-top" alt="...">
+            <img src="${(res.macbooks[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.macbooks[i]).nombre}</h4>
             <h5 class="card-text">${(res.macbooks[i]).precio}</h5>
@@ -79,7 +79,7 @@ fetch('baseDeDatos.json')
     for (let i = 0; i < (res.ipad).length; i++) {
             auxIpad += `
             <div class="card" style="width: 18rem;">
-            <img src="${(res.ipad[i]).imagen}" class="card-img-top" alt="...">
+            <img src="${(res.ipad[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.ipad[i]).nombre}</h4>
             <h5 class="card-text">${(res.ipad[i]).precio}</h5>
@@ -124,7 +124,7 @@ fetch('baseDeDatos.json')
     for (let i = 0; i < (res.iphone).length; i++) {
             auxIphone += `
             <div class="card" style="width: 18rem;">
-            <img src="${(res.iphone[i]).imagen}" class="card-img-top" alt="...">
+            <img src="${(res.iphone[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.iphone[i]).nombre}</h4>
             <h5 class="card-text">${(res.iphone[i]).precio}</h5>
@@ -168,7 +168,7 @@ fetch('baseDeDatos.json')
     for (let i = 0; i < (res.watch).length; i++) {
             auxWatch += `
             <div class="card" style="width: 18rem;">
-            <img src="${(res.watch[i]).imagen}" class="card-img-top" alt="...">
+            <img src="${(res.watch[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.watch[i]).nombre}</h4>
             <h5 class="card-text">${(res.watch[i]).precio}</h5>
@@ -212,7 +212,7 @@ fetch('baseDeDatos.json')
     for (let i = 0; i < (res.music).length; i++) {
             auxMusic += `
             <div class="card" style="width: 18rem;">
-            <img src="${(res.music[i]).imagen}" class="card-img-top" alt="...">
+            <img src="${(res.music[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.music[i]).nombre}</h4>
             <h5 class="card-text">${(res.music[i]).precio}</h5>

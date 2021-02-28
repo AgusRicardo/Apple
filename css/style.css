@@ -101,7 +101,8 @@ thead th {
   width: 10px; }
 
 tfoot {
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .table td {
   text-align: center;
@@ -427,10 +428,20 @@ form img {
     background-color: #b2b2b2;
     color: black; }
 
+.carritoVacio {
+  text-align: center; }
+
 .cards-productos-index {
   cursor: pointer; }
   .cards-productos-index:hover {
     border: black 1px solid; }
+
+.card-img-top-products {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  height: 205px;
+  width: auto; }
 
 .card-title {
   text-align: center; }
@@ -480,14 +491,15 @@ footer {
   justify-content: space-evenly; }
   .footer-txt h5 {
     font-size: 16px; }
-  .footer-txt li {
+  .footer-txt ul li {
     list-style: none;
     font-size: 14px; }
-    .footer-txt li a {
+    .footer-txt ul li a {
       color: #212529;
-      text-decoration: none; }
-    .footer-txt li a:hover {
-      text-decoration: underline; }
+      text-decoration: none;
+      cursor: pointer; }
+    .footer-txt ul li a:hover {
+      text-decoration: underline !important; }
 
 .copyProyecto {
   display: flex;

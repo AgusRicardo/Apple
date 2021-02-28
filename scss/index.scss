@@ -254,12 +254,22 @@ form img {
         color: black;
     }
 }
+.carritoVacio {
+    text-align: center;
+}
 // Cards index
 .cards-productos-index {
     cursor: pointer;
     &:hover{
         border: black 1px solid;
     }
+}
+.card-img-top-products{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    height: 205px;
+    width: auto;
 }
 .card-title{
     text-align: center;
@@ -332,16 +342,19 @@ footer {
     h5 {
         font-size: 16px;
     }
-    li {
-        list-style: none;
-        font-size: 14px;
-        a {
-            color: #212529;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+    ul {
+        li {
+            list-style: none;
+            font-size: 14px;
+            a {
+                color: #212529;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            a:hover {
+                text-decoration: underline !important;
+            }
+    }
     }
 }
 .copyProyecto {

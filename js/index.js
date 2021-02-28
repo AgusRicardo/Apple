@@ -29,20 +29,32 @@ function goToId() {
 
 
 // Para que se muestren los productos en el carrito
+
 function mostrarCarrito() {
     document.getElementById('navFix').style.position= 'unset';
     let auxCarrito = ``
-        for (let i = 0; i < carrito.length; i++) {
+    let tfoot = document.querySelector('tfoot');
+        if (carrito.length !== 0) {
+            for (let i = 0; i < carrito.length; i++) {
+                    tfoot.style.display = 'table-footer-group'
+                    auxCarrito += `
+                    <tr>
+                    <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
+                    <td>${carrito[i].nombre}</td>
+                    <td>1</td>
+                    <td>${carrito[i].precio}</td>
+                    <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
+                    </tr>
+                    `
+            }
+        }else {
+            tfoot.style.display = 'none'
             auxCarrito += `
-            <tr>
-            <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
-            <td>${carrito[i].nombre}</td>
-            <td>1</td>
-            <td>${carrito[i].precio}</td>
-            <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
-            </tr>
+            <div class="carritoVacio">
+            <h5>No hay productos en el carrito</h5>
+            </div>
             `
-    }
+        }
     document.getElementById('productoEnCarrito').innerHTML = auxCarrito ;
 }
 
