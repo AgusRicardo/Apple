@@ -42,10 +42,11 @@ function mostrarCarrito() {
                     <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
                     <td>${carrito[i].nombre}</td>
                     <td>1</td>
-                    <td>${carrito[i].precio}</td>
+                    <td>$${carrito[i].precio}</td>
                     <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
                     </tr>
                     `
+                    precioTotal()
             }
         }else {
             tfoot.style.display = 'none'
@@ -73,6 +74,16 @@ function eliminarProducto() {
         console.log('llega hasta aca');
         localStorage.removeItem(i)
     }
+}
+
+function precioTotal() {
+    let sumaPrecioTotal = document.getElementById('precioTotal');
+    let suma = 0;
+    for (let i = 0; i < carrito.length; i++) {
+        precio = carrito[i].precio
+        suma = Number(suma) + Number(precio)
+    }
+    sumaPrecioTotal.innerHTML = `$${suma}`;
 }
 
 

@@ -39,7 +39,7 @@ fetch('baseDeDatos.json')
             <img src="${(res.macbooks[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.macbooks[i]).nombre}</h4>
-            <h5 class="card-text">${(res.macbooks[i]).precio}</h5>
+            <h5 class="card-text">$${(res.macbooks[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.macbooks[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(res.macbooks[i])})'>Agregar al carrito</a>
             </div>
@@ -82,7 +82,7 @@ fetch('baseDeDatos.json')
             <img src="${(res.ipad[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.ipad[i]).nombre}</h4>
-            <h5 class="card-text">${(res.ipad[i]).precio}</h5>
+            <h5 class="card-text">$${(res.ipad[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.ipad[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.ipad[i]))})'>Agregar al carrito</a>
             </div>
@@ -127,7 +127,7 @@ fetch('baseDeDatos.json')
             <img src="${(res.iphone[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.iphone[i]).nombre}</h4>
-            <h5 class="card-text">${(res.iphone[i]).precio}</h5>
+            <h5 class="card-text">$${(res.iphone[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.iphone[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.iphone[i]))})'>Agregar al carrito</a>
             </div>
@@ -171,7 +171,7 @@ fetch('baseDeDatos.json')
             <img src="${(res.watch[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.watch[i]).nombre}</h4>
-            <h5 class="card-text">${(res.watch[i]).precio}</h5>
+            <h5 class="card-text">$${(res.watch[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.watch[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.watch[i]))})'>Agregar al carrito</a>
             </div>
@@ -215,7 +215,7 @@ fetch('baseDeDatos.json')
             <img src="${(res.music[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.music[i]).nombre}</h4>
-            <h5 class="card-text">${(res.music[i]).precio}</h5>
+            <h5 class="card-text">$${(res.music[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.music[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.music[i]))})'>Agregar al carrito</a>
             </div>
