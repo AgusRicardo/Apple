@@ -14,7 +14,8 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  text-align: center; }
 
 .img-portada-ipad {
   background-image: url("../img/portadas/ipad.jpg");
@@ -43,11 +44,22 @@
   margin-top: 100px;
   text-align: center; }
 
+.accTitle {
+  padding-top: 75px;
+  padding-bottom: 43px;
+  font-size: 46px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -.005em;
+  color: #575757;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
+
 .accesorios {
   display: flex;
   flex-flow: row wrap;
   background-color: white;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  padding: 0; }
   .accesorios .accesorioIphone1 {
     background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1604002057000");
     height: 400px;
@@ -72,6 +84,96 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: white; }
+
+.fieldsetWatch {
+  margin-top: 100px; }
+  .fieldsetWatch p {
+    margin-bottom: 50px;
+    color: #575757; }
+
+.infoWatchWater {
+  background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_water_resistant__fqj2djxfwvam_large.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  background-size: 50px; }
+
+.infoWatchHeart {
+  background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_heart_rate_notifications__chvretw55efm_large.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  background-size: 40px; }
+
+.infoWatchCall {
+  background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_emergency_calling__bodtwvv25mvm_large.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  background-size: 40px; }
+
+.infoWatchSOS {
+  background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_sos__cj0utvhlmtua_large.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  background-size: 40px; }
+
+.infoWatchAltimetro {
+  background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_altimeter__big6ar4o48nm_large.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 55px;
+  background-size: 40px; }
+
+.portadaProductoWatch {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 100px; }
+  .portadaProductoWatch .imgGPS {
+    background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/display/se_display_44mm__bdvqlsttdfqq_large.jpg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px; }
+  .portadaProductoWatch .imgHeart {
+    background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/heart/se_heart_rate_44mm__b4fdvj2e2kgi_large.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px; }
+  .portadaProductoWatch .imgSOS {
+    background-image: url("https://www.apple.com/v/watch/compare/q/images/overview/safety/se_safety_sos_44mm__cntypex5rbau_large.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px; }
+
+.accesorioWatch1 {
+  background-image: url("https://www.apple.com/v/watch/home/ai/images/overview/bands/tile_bands_winter__dr3z2qgi0z2a_large.jpg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 400px;
+  background-position: center center;
+  padding: 10px; }
+
+.accesorioWatch2 {
+  background-image: url("https://www.apple.com/v/watch/home/ai/images/overview/airpods/tile_airpods_engraving_update__tacp8e7plv6u_large.jpg");
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 400px;
+  background-position: center center;
+  background-size: 600px;
+  padding: 10px;
+  cursor: pointer; }
 
 .img-portada-tv {
   background-image: url("../img/carousel/iphone12.jpg");

@@ -35,7 +35,7 @@ fetch('baseDeDatos.json')
     let auxMac = ``;
     for (let i = 0; i < (res.macbooks).length; i++) {
         auxMac += `
-            <div class="card" style="width: 18rem;">
+            <div class="" style="width: 23rem;">
             <img src="${(res.macbooks[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.macbooks[i]).nombre}</h4>
@@ -78,7 +78,7 @@ fetch('baseDeDatos.json')
     let auxIpad = ``
     for (let i = 0; i < (res.ipad).length; i++) {
             auxIpad += `
-            <div class="card" style="width: 18rem;">
+            <div class="" style="width: 18rem;">
             <img src="${(res.ipad[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.ipad[i]).nombre}</h4>
@@ -123,7 +123,7 @@ fetch('baseDeDatos.json')
     let auxIphone = ``
     for (let i = 0; i < (res.iphone).length; i++) {
             auxIphone += `
-            <div class="card" style="width: 18rem;">
+            <div class="" style="width: 20rem;">
             <img src="${(res.iphone[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.iphone[i]).nombre}</h4>
@@ -167,13 +167,26 @@ fetch('baseDeDatos.json')
     let auxWatch = ``
     for (let i = 0; i < (res.watch).length; i++) {
             auxWatch += `
-            <div class="card" style="width: 18rem;">
+            <div class="" style="width: 20rem;">
             <img src="${(res.watch[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.watch[i]).nombre}</h4>
             <h5 class="card-text">$${(res.watch[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.watch[i]).stock}</p>
             <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.watch[i]))})'>Agregar al carrito</a>
+            <fieldset class="fieldsetWatch">
+            <div class="infoWatchWater"></div>
+            <p>Resistencia al agua</p>
+            <div class="infoWatchHeart"></div>
+            <p>Freciencias cardíacas</p>
+            <div class="infoWatchCall"></div>
+            <p>Llamadas de emergencia</p>
+            <div class="infoWatchSOS"></div>
+            <p>Emergencia SOS</p>
+            <div class="infoWatchAltimetro"></div>
+            <p>Altímetro</p>
+            </fieldset>
+            <div class="card-text"></div>
             </div>
             </div>
             `;
@@ -211,7 +224,7 @@ fetch('baseDeDatos.json')
     let auxMusic = ``
     for (let i = 0; i < (res.music).length; i++) {
             auxMusic += `
-            <div class="card" style="width: 18rem;">
+            <div class="" style="width: 18rem;">
             <img src="${(res.music[i]).imagen}" class="card-img-top card-img-top-products" alt="...">
             <div class="card-body">
             <h4 class="card-title">${(res.music[i]).nombre}</h4>

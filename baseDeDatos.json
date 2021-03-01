@@ -2,6 +2,14 @@
     "macbooks": [
         {
             "id": 1,
+            "nombre": "iMac",
+            "precio": "1099",
+            "descripcion": "",
+            "imagen": "https://www.apple.com/v/imac/k/images/site/compare_imac_27__bxqbs5os9dhy_medium.jpg",
+            "stock": 3
+        },
+        {
+            "id": 2,
             "nombre": "Macbook Air",
             "precio": "999",
             "descripcion": "",
@@ -9,7 +17,7 @@
             "stock": 8
         },
         {
-            "id": 2,
+            "id": 3,
             "nombre": "Macbook Pro 13",
             "precio": "1299",
             "descripcion": "",
@@ -17,20 +25,12 @@
             "stock": 5
         },
         {
-            "id": 3,
+            "id": 4,
             "nombre": "Macbook Pro 16",
             "precio": "2399",
             "descripcion": "",
             "imagen": "https://www.apple.com/v/mac/home/ba/images/overview/compare/macbook_pro_16__x90efpvdutu6_large.jpg",
             "stock": 5
-        },
-        {
-            "id": 4,
-            "nombre": "iMac",
-            "precio": "1099",
-            "descripcion": "",
-            "imagen": "https://www.apple.com/v/imac/k/images/site/compare_imac_27__bxqbs5os9dhy_medium.jpg",
-            "stock": 3
         }
     ],
     "ipad":[
@@ -69,36 +69,28 @@
     ],
     "iphone": [
         {
-            "id": 9,
-            "nombre": "iPhone 12",
+            "id": 10,
+            "nombre": "iPhone 12 Mini",
             "precio": "699",
             "descripcion": "",
-            "imagen": "https://www.apple.com/v/iphone/home/au/images/overview/compare/compare_iphone_12__btq63lk8td7m_large.jpg",
-            "stock": 3
-        },
-        {
-            "id": 10,
-            "nombre": "iPhone 12 Pro",
-            "precio": "999",
-            "descripcion": "",
-            "imagen": "https://www.apple.com/v/iphone/home/au/images/overview/compare/compare_iphone_12_pro__gmn3556ju3am_large.jpg",
-            "stock": 9
-        },
-        {
-            "id": 11,
-            "nombre": "iPhone SE",
-            "precio": "399",
-            "descripcion": "",
-            "imagen": "https://www.apple.com/v/iphone/home/au/images/overview/compare/compare_iphone_se__1uyg4tzyd4ya_large.jpg",
+            "imagen": "https://www.apple.com/v/iphone/compare/s/images/overview/compare_iphone12_mini_black__32g32p2j7hem_large.jpg",
             "stock": 12
         },
         {
-            "id": 12,
-            "nombre": "iPhone 11",
-            "precio": "599",
+            "id": 11,
+            "nombre": "iPhone 12",
+            "precio": "699",
             "descripcion": "",
-            "imagen": "https://www.apple.com/v/iphone/home/au/images/overview/compare/compare_iphone_11__bzjboswm5hbm_large.jpg",
-            "stock": 8
+            "imagen": "https://www.apple.com/v/iphone/compare/s/images/overview/all_models_iphone12__npsazl7hv6im_large.jpg",
+            "stock": 3
+        },
+        {
+            "id": 12,
+            "nombre": "iPhone 12 Pro",
+            "precio": "999",
+            "descripcion": "",
+            "imagen": "https://www.apple.com/v/iphone/compare/s/images/overview/all_models_iphone12_pro__eshbos9h7dme_large.jpg",
+            "stock": 9
         }
     ],
     "watch": [
@@ -157,7 +149,7 @@
             "nombre": "HomePod mini",
             "precio": "99",
             "descripcion": "",
-            "imagen": "https://www.apple.com/v/homepod-mini/d/images/meta/og__cqpch1rlmaaa_wechat.png",
+            "imagen": "https://www.apple.com/v/homepod-mini/d/images/overview/hero_homepod__cnpc7icpf1aq_large.png",
             "stock": 8
         }
     ]
