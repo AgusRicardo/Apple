@@ -23,6 +23,7 @@ $color-green: #4cd964;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
+    border-bottom: 2px solid $color-nav;
 }
 .productos {
     display: flex;
@@ -31,6 +32,48 @@ $color-green: #4cd964;
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
+}
+.portadaProcutoMac{
+    background-image: url('https://www.apple.com/v/macbook-pro-16/c/images/overview/processor_hero_fallback__fzhvl0z0hy2y_large.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%;
+    height: 320px;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.infoTouchId{
+    background-image: url('https://www.apple.com/v/mac/compare/o/images/overview/icon_touch_id__bfbu56i2wdjm_large.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 50px;
+}
+.infoTouchBar{
+    background-image: url('https://www.apple.com/v/mac/compare/o/images/overview/icon_touch_bar__6i3uywb41sie_large.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 150px;
+}
+.accesoriosMac1{
+    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQ052?wid=445&hei=445&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1495129815011');
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+    background-position: center center;
+    padding: 10px;
+}
+.accesoriosMac2{
+    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MLA02?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1564098735372');
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px;
+    background-position: center center;
+    padding: 10px;
 }
 
 // Page iPad
@@ -41,6 +84,48 @@ $color-green: #4cd964;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: white;
+    border-bottom: 2px solid $color-nav;
+}
+.portadaProductoIpad {
+    background-image: url('https://www.apple.com/v/ipad-pro/ac/images/shared/ipad_accessories__c3tmncn6oswi_large.jpg');
+    height: 300px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+    margin-top: 100px;
+}
+.infoKey{
+    background-image: url('https://www.apple.com/v/ipad/compare/w/images/overview/icon_magic_keyboard__emgo0c89cca6_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75px;
+    background-size: 80px;
+}
+.infoPencil{
+    background-image: url('https://www.apple.com/v/ipad/compare/w/images/overview/icon_pencil__83akgj3nnhuq_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75px;
+    background-size: 80px;
+}
+.accesoriosIpad1{
+    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MXQT2LL?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1599711999000');
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 472px;
+    padding: 10px;
+    background-position: center center;
+}
+.accesoriosIpad2{
+    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU8F2?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1540596407165');
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 472px;
+    padding: 10px;
+    background-position: center center;
 }
 
 // Page iPhone
@@ -50,14 +135,31 @@ $color-green: #4cd964;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-bottom: 2px solid $color-nav;
 }
 .portadaProductoIphone {
-    background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-gallery1-2020?wid=1069&hei=407&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601602934000');
-    height: 370px;
-    background-position: center center;
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
     width: 100%;
+    margin-top: 100px;
+    background-color: black;
+    justify-content: center;
+}
+.camera{
+    background-image: url('https://www.apple.com/v/iphone-12-pro/f/images/overview/design/design_finishing_touches_static__cerrbjkbibg2_medium.jpg');
+    height: 300px;
     background-repeat: no-repeat;
-    background-color: rgba(174,203,217,255);
+    background-position: center center;
+    background-size: 300px;
+    width: 45%;
+}
+.phone{
+    background-image: url('https://www.apple.com/v/iphone-12-pro/f/images/overview/design/design_tougher_glass__czlsbgxawrki_medium.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+    width: 55%;
 }
 .margin{
     margin-top: 100px;
@@ -73,12 +175,55 @@ $color-green: #4cd964;
     color: $color-nav;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+.info5G{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_5g__e3gdezblgy2q_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 50px;
+}
+.infoA14{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_A14__euhxmlhospea_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 50px;
+}
+.infoBateria{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_battery__emgn4vxvndci_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 50px;
+}
+.infoID{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_face_id__famo35toygqe_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55px;
+    background-size: 50px;
+}
+.infoWater{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_water_resistant__eckrl1t6v98i_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 75px;
+    background-size: 50px;
+}
+.infoAcc{
+    background-image: url('https://www.apple.com/v/iphone/compare/s/images/overview/icon_magsafe_triple_camera__eh7g4gs07kya_large.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 110px;
+    background-size: 50px;
+}
 .accesorios{
     display: flex;
     flex-flow: row wrap;
     background-color: white;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     padding: 0;
+    margin-bottom: 100px;
     .accesorioIphone1{
         background-image: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1604002057000');
         height: 400px;
@@ -107,13 +252,42 @@ $color-green: #4cd964;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: white;
+    border-bottom: 2px solid $color-nav;
 }
 .fieldsetWatch {
     margin-top: 100px;
+    background-color: white;
+    border-top: 2px solid $color-nav;
+    padding: 10px;
+    border-radius: 15px;
     p {
         margin-bottom: 50px;
         color: $color-nav;
     }
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 8px;
+    }
+    h3 {
+        padding: 8px;
+        p {
+            font-size: 15px;
+        }
+    }
+    h4 {
+        padding: 8px;
+        p {
+            font-size: 15px;
+        }
+    }
+}
+.infoCaseSize {
+    background-image: url('https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_case_size_44_40__d09plii3t98i_large.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    background-size: 60px;
 }
 .infoWatchWater {
     background-image: url('https://www.apple.com/v/watch/compare/q/images/overview/quicklook/quicklook_water_resistant__fqj2djxfwvam_large.png');
@@ -159,6 +333,7 @@ $color-green: #4cd964;
     background-color: white;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     margin-bottom: 100px;
+    margin-top: 100px;
     .imgGPS {
         background-image: url('https://www.apple.com/v/watch/compare/q/images/overview/display/se_display_44mm__bdvqlsttdfqq_large.jpg');
         background-repeat: no-repeat;
@@ -204,16 +379,6 @@ $color-green: #4cd964;
 }
 
 
-// Page Tv
-.img-portada-tv {
-    background-image: url('../img/carousel/iphone12.jpg');
-    height: 85vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
 // Page Music
 .img-portada-music {
     background-image: url('../img/portadas/music.jpg');
@@ -222,8 +387,19 @@ $color-green: #4cd964;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color:rgb(238,237,239);
+    border-bottom: 2px solid $color-nav;
 }
-
+.portadaProductoMusic {
+    background-image: url('https://www.apple.com/v/homepod-mini/d/images/overview/intercom_devices__yfp8qnawuoie_large.jpg');
+    height: 400px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 800px;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
 // Carrito
 .td-img {
     text-align: center;
@@ -254,4 +430,26 @@ tfoot{
     font-size: 12px;
     border: none;
     box-shadow: 0px 2px 3px rgba(0,0,0,.25);
+}
+
+// Botones 
+.btn-primary {
+    color: white;
+    background-color: #09ae85;
+    border: #09ae85;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.25);
+    &:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+.fa-angle-right {
+    font-size: 16px !important;
+    margin-left: 2px;
+}
+.fa-shopping-bag {
+    font-size: 18px !important;
+    margin-right: 2px;
+}
+.btn {
+    padding: 3px 10px 3px 10px;
 }

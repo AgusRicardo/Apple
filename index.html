@@ -211,32 +211,6 @@
                         <div class="img-portada"></div>
                     </div>
                 </div>
-        
-                <!-- Iconos grandes -->
-                <div class="container">
-                    <div class="row">
-                        <div class="card-group iconos-grandes">
-                            <div class="cartas">
-                                <img src="./img/big-icon/big-icon-send-box.png" class="card-img-top box-icon" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                            </div>
-                            <div class="cartas">
-                                <img src="./img/big-icon/big-icon-money.png" class="card-img-top money-icon" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                            <div class="cartas">
-                                <img src="./img/big-icon/big-help.png" class="card-img-top help-icon" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
     </section>
     <!-- Boton Flotante -->
     <section id="btn-flotante">
@@ -251,8 +225,18 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="img-portada-mac"></div>
+                <div id="productos-mac" class="productos"></div>
+                <div class="portadaProcutoMac"></div>
             </div>
-            <div id="productos-mac" class="productos"></div>
+            <div class="container">
+                <div class="row margin">
+                    <h2 class="accTitle">Accesorios</h2>
+                    <div class="accesorios">
+                        <div class="accesoriosMac1"></div>
+                        <div class="accesoriosMac2"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="pageIpad">
@@ -260,6 +244,16 @@
             <div class="row">
                 <div class="img-portada-ipad"></div>
                 <div id="productos-ipad" class="productos"></div>
+                <div class="portadaProductoIpad"></div>
+            </div>
+            <div class="container">
+                <div class="row margin">
+                    <h2 class="accTitle">Accesorios</h2>
+                    <div class="accesorios">
+                        <div class="accesoriosIpad1"></div>
+                        <div class="accesoriosIpad2"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -268,7 +262,10 @@
             <div class="row">
                 <div class="img-portada-iphone"></div>
                 <div id="productos-iphone" class="productos"></div>
-                <div class="portadaProductoIphone"></div>
+                <div class="portadaProductoIphone">
+                    <div class="camera"></div>
+                    <div class="phone"></div>
+                </div>
             </div>
             <div class="container">
                 <div class="row margin">
@@ -308,87 +305,115 @@
             <div class="row">
                 <div class="img-portada-music"></div>
                 <div id="productos-music" class="productos"></div>
+                <div class="portadaProductoMusic"></div>
             </div>
         </div>
     </section>
     <footer>
+        <!-- Iconos grandes -->
         <div class="container">
             <div class="row">
-                <div class="footer-txt">
-                    <div>
-                        <ul>
-                            <h5>Productos</h5>
-                            <li><a onclick="mostrarMac()">Mac</a></li>
-                            <li><a onclick="mostrarIpad()">iPad</a></li>
-                            <li><a onclick="mostrarIphone()">iPhone</a></li>
-                            <li><a onclick="mostrarWatch()">Watch</a></li>
-                            <li><a onclick="mostrarMusic()">Music</a></li>
-                        </ul>
-                        <ul>
-                            <h5>Alumno</h5>
-                            <li><a href="https://www.linkedin.com/in/agustin-ricardo/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/agustinricardo1" target="_blank">GitHub</a></li>
-                        </ul>
+                <div class="card-group iconos-grandes" id="iconosGrandes"> 
+                    <div class="cartas">
+                        <img src="./img/big-icon/big-icon-send-box.png" class="card-img-top box-icon" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
-                    <div>
-                        <ul>
-                            <h5>Servicios</h5>
-                            <li>Apple Music</li>
-                            <li>Apple TV+</li>
-                            <li>Apple Fitness+</li>
-                            <li>Apple News+</li>
-                            <li>Apple Arcade</li>
-                            <li>iCloud</li>
-                            <li>Apple One</li>
-                            <li>Apple Card</li>
-                            <li>Apple Books</li>
-                            <li>App Store</li>
-                        </ul>
+                    <div class="cartas">
+                        <img src="./img/big-icon/big-icon-money.png" class="card-img-top money-icon" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
                     </div>
-                    <div>
-                        <ul>
-                            <h5>Trabaja con nosotros</h5>
-                            <li>asd</li>
-                            <li>asd</li>
-                            <li>asd</li>
-                        </ul>
-                        <ul>
-                            <h5>Acerca de Apple</h5>
-                            <li>asd</li>
-                            <li>asd</li>
-                            <li>asd</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <h5>Soporte</h5>
-                            <li>asd</li>
-                            <li>asd</li>
-                            <li>asd</li>
-                        </ul>
-                        <ul>
-                            <h5>Contacto</h5>
-                            <li><a href="https://www.instagram.com/apple/?hl=es-la" target="_blank">Instagram</a></li>
-                            <li><a href="https://twitter.com/apple" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.apple.com/" target="_blank">Web Oficial</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="copyProyecto">
-                    <div class="copy">
-                        <h5>Copyright © 2021 Apple Inc. Todos los derechos reservados.</h5>
-                    </div>
-                    <div class="proyecto">
-                        <h5>Proyecto final curso JavaScript Coder House</h5>
+                    <div class="cartas">
+                        <img src="./img/big-icon/big-help.png" class="card-img-top help-icon" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-txt">
+                        <div>
+                            <ul>
+                                <h5>Productos</h5>
+                                <li><a onclick="mostrarMac()">Mac</a></li>
+                                <li><a onclick="mostrarIpad()">iPad</a></li>
+                                <li><a onclick="mostrarIphone()">iPhone</a></li>
+                                <li><a onclick="mostrarWatch()">Watch</a></li>
+                                <li><a onclick="mostrarMusic()">Music</a></li>
+                            </ul>
+                            <ul>
+                                <h5>Alumno</h5>
+                                <li><a href="https://www.linkedin.com/in/agustin-ricardo/" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://github.com/agustinricardo1" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <h5>Servicios</h5>
+                                <li>Apple Music</li>
+                                <li>Apple TV+</li>
+                                <li>Apple Fitness+</li>
+                                <li>Apple News+</li>
+                                <li>Apple Arcade</li>
+                                <li>iCloud</li>
+                                <li>Apple One</li>
+                                <li>Apple Card</li>
+                                <li>Apple Books</li>
+                                <li>App Store</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <h5>Trabaja con nosotros</h5>
+                                <li>asd</li>
+                                <li>asd</li>
+                                <li>asd</li>
+                            </ul>
+                            <ul>
+                                <h5>Acerca de Apple</h5>
+                                <li>asd</li>
+                                <li>asd</li>
+                                <li>asd</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <h5>Soporte</h5>
+                                <li>asd</li>
+                                <li>asd</li>
+                                <li>asd</li>
+                            </ul>
+                            <ul>
+                                <h5>Contacto</h5>
+                                <li><a href="https://www.instagram.com/apple/?hl=es-la" target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/apple" target="_blank">Twitter</a></li>
+                                <li><a href="https://www.apple.com/" target="_blank">Web Oficial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="copyProyecto">
+                        <div class="copy">
+                            <h5>Copyright © 2021 Apple Inc. Todos los derechos reservados.</h5>
+                        </div>
+                        <div class="proyecto">
+                            <h5>Proyecto final curso JavaScript Coder House</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
