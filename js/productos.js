@@ -43,7 +43,7 @@ fetch('baseDeDatos.json')
             </br>
             <h5 class="card-text">$${(res.macbooks[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.macbooks[i]).stock}</p>
-            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(res.macbooks[i])})'>Agregar al carrito</a>
+            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify(res.macbooks[i])})'><i class="fas fa-shopping-bag"></i> Agregar al carrito <i class="fas fa-angle-right"></i></a>
             <fieldset class="fieldsetWatch">
             <h1>${(res.macbooks[i]).pulgadas}”</h1>
             <h3>${(res.macbooks[i]).procesador}
@@ -105,7 +105,7 @@ fetch('baseDeDatos.json')
             </br>
             <h5 class="card-text">$${(res.ipad[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.ipad[i]).stock}</p>
-            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.ipad[i]))})'>Agregar al carrito</a>
+            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.ipad[i]))})'><i class="fas fa-shopping-bag"></i> Agregar al carrito <i class="fas fa-angle-right"></i></a>
             <fieldset class="fieldsetWatch">
             <h1>${(res.ipad[i]).pulgadas}”</h1>
             <h3>${(res.ipad[i]).memory}<p>Memoria</p></h3>
@@ -160,7 +160,7 @@ fetch('baseDeDatos.json')
             </br>
             <h5 class="card-text">$${(res.iphone[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.iphone[i]).stock}</p>
-            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.iphone[i]))})'>Agregar al carrito</a>
+            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.iphone[i]))})'><i class="fas fa-shopping-bag"></i> Agregar al carrito <i class="fas fa-angle-right"></i></a>
             <fieldset class="fieldsetWatch">
             <h1>${(res.iphone[i]).pulgadas}”</h1>
             <h4>${(res.iphone[i]).memory}<p>Memoria</p></h4>
@@ -222,7 +222,7 @@ fetch('baseDeDatos.json')
             </br>
             <h5 class="card-text">$${(res.watch[i]).precio}</h5>
             <p>Cantidad en stock: ${(res.watch[i]).stock}</p>
-            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.watch[i]))})'>Agregar al carrito</a>
+            <a  class="btn btn-primary" onclick='agregarAlCarrito(${JSON.stringify((res.watch[i]))})'><i class="fas fa-shopping-bag"></i> Agregar al carrito <i class="fas fa-angle-right"></i></a>
             <fieldset class="fieldsetWatch">
             <div class="infoCaseSize"></div>
             <p>${(res.watch[i]).medidas}</p>
