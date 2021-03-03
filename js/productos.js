@@ -6,8 +6,9 @@ let pageWatch = document.getElementById('pageWatch');
 let pageMusic = document.getElementById('pageMusic');
 let loading = document.getElementById('loading');
 let footer = document.querySelector('footer');
-let pageIndex = document.getElementById('pageIndex')
-let iconosGrandes = document.getElementById('iconosGrandes')
+let pageIndex = document.getElementById('pageIndex');
+let iconosGrandes = document.getElementById('iconosGrandes');
+let pageDatos = document.getElementById('pageDatos')
 
 // Mostrar Macbooks
 function mostrarMac() {
@@ -19,6 +20,7 @@ function mostrarMac() {
     pageMusic.style.display = 'none';
     footer.style.display = 'none';
     pageIndex.style.display = 'none';
+    pageDatos.style.display = 'none';
     setTimeout(() => {
         pageMac.style.display = 'block';
         pageIpad.style.display = 'none';
@@ -81,6 +83,7 @@ function mostrarIpad() {
     pageMusic.style.display = 'none';
     footer.style.display = 'none';
     pageIndex.style.display = 'none';
+    pageDatos.style.display = 'none';
     setTimeout(() => {
         pageMac.style.display = 'none';
         pageIpad.style.display = 'block';
@@ -136,6 +139,7 @@ function mostrarIphone() {
     pageMusic.style.display = 'none';
     footer.style.display = 'none';
     pageIndex.style.display = 'none';
+    pageDatos.style.display = 'none';
     setTimeout(() => {
         pageMac.style.display = 'none';
         pageIpad.style.display = 'none';
@@ -198,6 +202,7 @@ function mostrarWatch() {
     pageMusic.style.display = 'none';
     footer.style.display = 'none';
     pageIndex.style.display = 'none';
+    pageDatos.style.display = 'none';
     setTimeout(() => {
         pageMac.style.display = 'none';
         pageIpad.style.display = 'none';
@@ -259,6 +264,7 @@ function mostrarMusic() {
     pageMusic.style.display = 'none';
     footer.style.display = 'none';
     pageIndex.style.display = 'none';
+    pageDatos.style.display = 'none';
     setTimeout(() => {
         pageMac.style.display = 'none';
         pageIpad.style.display = 'none';
@@ -293,3 +299,21 @@ fetch('baseDeDatos.json')
     }
     document.getElementById('productos-music').innerHTML = auxMusic;
 });
+
+// Page Datos
+function datos() {
+    loading.style.display = 'flex'
+    pageMac.style.display = 'none';
+    pageIpad.style.display = 'none';
+    pageIphone.style.display = 'none';
+    pageWatch.style.display = 'none';
+    pageMusic.style.display = 'none';
+    footer.style.display = 'none';
+    pageIndex.style.display = 'none';
+    $('.sidenav').sidenav('close');
+    setTimeout(() =>{
+        loading.style.display = 'none'
+        pageDatos.style.display = 'block';
+        document.getElementById('barraProgressCarrito').display = 'block'
+    },1500)
+}

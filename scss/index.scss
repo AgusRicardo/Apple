@@ -89,11 +89,12 @@ form img {
         width: 100%;
         font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         li{
-            margin: 0px 20px 0px 20px;
+            margin: 0px 15px 0px 15px;
         }
         a{
             color: white;
             font-size: 20px;
+            padding: 0px 8px 0px 8px !important;
         }
         a:hover{
             color: black;
@@ -257,8 +258,45 @@ form img {
         color: black;
     }
 }
+#barraProgressCarrito {
+    display: none;
+}
 .carritoVacio {
     text-align: center;
+}
+.progress{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    border: 0.1px solid $color-nav-fixed;
+    .determinate {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        .bola {
+            padding: 0;
+            margin: 0;
+            width: 10px;
+            height: 20px;
+            background-color: $color-nav;
+        }
+    }
+}
+.progress2 {
+    width: 100%;
+}
+.progressTitle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    h5 {
+        margin-bottom: 0;
+    }
+}
+.progressMiCarrito {
+    
 }
 // Cards index
 .cards-productos-index {

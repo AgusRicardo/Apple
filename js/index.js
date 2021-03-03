@@ -32,10 +32,12 @@ function goToId() {
 
 function mostrarCarrito() {
     document.getElementById('navFix').style.position= 'unset';
+    let barraProgressCarrito = document.getElementById('barraProgressCarrito');
     let auxCarrito = ``
     let tfoot = document.querySelector('tfoot');
         if (carrito.length !== 0) {
             for (let i = 0; i < carrito.length; i++) {
+                    barraProgressCarrito.style.display = 'block'
                     tfoot.style.display = 'table-footer-group'
                     auxCarrito += `
                     <tr>
@@ -49,6 +51,7 @@ function mostrarCarrito() {
                     precioTotal()
             }
         }else {
+            barraProgressCarrito.style.display = 'none'
             tfoot.style.display = 'none'
             auxCarrito += `
             <div class="carritoVacio">

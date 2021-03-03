@@ -86,6 +86,23 @@
                     </a>
                         <h3>Carrito Apple ARG</h3>
                 </div>
+                <div id="barraProgressCarrito">
+                    <div class="progressTitle">
+                        <div class="progressMiCarrito">
+                            <h5>Mi carrito</h5>
+                        </div>
+                        <div class="progressDatos">
+                            <h5>Datos</h5>
+                        </div>
+                        <div class="progressPago">
+                            <h5>Pago</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="determinate" style="width: 38%">
+                        <p class="bola"></p></div>
+                    </div>
+                </div>
                 <table class="table">
                     <thead>
                         <tr>
@@ -110,9 +127,33 @@
                 </table>
                 <div class="buttonsCarrito">
                     <a class="btn tooltipped vaciarCarrito btn-small" data-position="bottom" onclick="vaciarElCarrito()">Vaciar carrito</a>
-                    <a class="btn tooltipped comprar" data-position="bottom" >Continuar compra</a>
+                    <a class="btn tooltipped comprar" data-position="bottom" onclick="datos()">Continuar compra</a>
                 </div>
             </ul>
+    </section>
+    <!-- Datos -->
+    <section id="pageDatos">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div class="progressTitle">
+                        <div class="progressMiCarrito">
+                            <h5>Mi carrito</h5>
+                        </div>
+                        <div class="progressDatos">
+                            <h5>Datos</h5>
+                        </div>
+                        <div class="progressPago">
+                            <h5>Pago</h5>
+                        </div>
+                    </div>
+                    <div class="progress progress2">
+                        <div class="determinate" style="width: 66%">
+                        <p class="bola"></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Carousel, frase, card-productos -->
     <section id="pageIndex">
