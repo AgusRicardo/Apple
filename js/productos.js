@@ -9,10 +9,15 @@ let footer = document.querySelector('footer');
 let pageIndex = document.getElementById('pageIndex');
 let iconosGrandes = document.getElementById('iconosGrandes');
 let pageDatos = document.getElementById('pageDatos')
+let subMenu = document.getElementById('sub-menu');
+let btnFlotante = document.getElementById('btn-flotante');
 
 // Mostrar Macbooks
 function mostrarMac() {
     loading.style.display = 'flex';
+    document.getElementById('navFix').style.position= 'fixed';
+    subMenu.style.display = 'flex';
+    btnFlotante.style.display = 'block';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -76,6 +81,9 @@ fetch('baseDeDatos.json')
 // Mostrar iPads
 function mostrarIpad() {
     loading.style.display = 'flex'
+    document.getElementById('navFix').style.position= 'fixed';
+    subMenu.style.display = 'flex';
+    btnFlotante.style.display = 'block';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -132,6 +140,9 @@ fetch('baseDeDatos.json')
 // Mostrar iPhones
 function mostrarIphone() {
     loading.style.display = 'flex'
+    document.getElementById('navFix').style.position= 'fixed';
+    subMenu.style.display = 'flex';
+    btnFlotante.style.display = 'block';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -194,7 +205,10 @@ fetch('baseDeDatos.json')
 
 // Mostrar Apple Watchs
 function mostrarWatch() {
-    loading.style.display = 'flex'
+    loading.style.display = 'flex';
+    document.getElementById('navFix').style.position= 'fixed';
+    subMenu.style.display = 'flex';
+    btnFlotante.style.display = 'block';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -256,7 +270,10 @@ fetch('baseDeDatos.json')
 
 // Mostrar Music
 function mostrarMusic() {
-    loading.style.display = 'flex'
+    loading.style.display = 'flex';
+    document.getElementById('navFix').style.position= 'fixed';
+    subMenu.style.display = 'flex';
+    btnFlotante.style.display = 'block';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -302,7 +319,10 @@ fetch('baseDeDatos.json')
 
 // Page Datos
 function datos() {
-    loading.style.display = 'flex'
+    loading.style.display = 'flex';
+    document.getElementById('navFix').style.position= 'fixed';
+    btnFlotante.style.display = 'none';
+    subMenu.style.display = 'none';
     pageMac.style.display = 'none';
     pageIpad.style.display = 'none';
     pageIphone.style.display = 'none';
@@ -316,4 +336,18 @@ function datos() {
         pageDatos.style.display = 'block';
         document.getElementById('barraProgressCarrito').display = 'block'
     },1500)
+    
+    let auxDato = ``
+    carrito.forEach(element => {
+        auxDato += `
+        <div class="pageDatoResumen">
+            <tr class="noBorder">
+            <td><img src="${element.imagen}" alt="" class="pagDatoImg"></td>
+            <td class="">${element.nombre}</td>
+            <td class="">$${element.precio}</td>
+            </tr>
+        </div>
+        `;
+    })
+    document.getElementById('productosCarritoDataPage').innerHTML = auxDato;
 }

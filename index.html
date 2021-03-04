@@ -6,6 +6,7 @@
     <title>Apple ARG</title>
     <link rel="icon" href="./img/icon/logo-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -52,7 +53,7 @@
                         </div>
                     </div>
                 </nav>
-                <div class="nav_iconos">
+                <div class="nav_iconos" id="sub-menu">
                     <div class="nav_iconos_img">
                         <img src="./img/icon/icon-search.svg" alt="" class="imgSearch imgNavHover">
                         <img src="./img/icon/icon-love.svg" alt="" class="imgLove imgNavHover">
@@ -89,13 +90,13 @@
                 <div id="barraProgressCarrito">
                     <div class="progressTitle">
                         <div class="progressMiCarrito">
-                            <h5>Mi carrito</h5>
+                            <p>Mi carrito</p>
                         </div>
                         <div class="progressDatos">
-                            <h5>Datos</h5>
+                            <p>Datos</p>
                         </div>
                         <div class="progressPago">
-                            <h5>Pago</h5>
+                            <p>Pago</p>
                         </div>
                     </div>
                     <div class="progress">
@@ -125,7 +126,7 @@
                         </tr>
                     </tfoot>
                 </table>
-                <div class="buttonsCarrito">
+                <div class="buttonsCarrito" id="buttonsCarrito">
                     <a class="btn tooltipped vaciarCarrito btn-small" data-position="bottom" onclick="vaciarElCarrito()">Vaciar carrito</a>
                     <a class="btn tooltipped comprar" data-position="bottom" onclick="datos()">Continuar compra</a>
                 </div>
@@ -135,7 +136,7 @@
     <section id="pageDatos">
         <div class="container">
             <div class="row">
-                <div>
+                <div class="pageDatosBarra">
                     <div class="progressTitle">
                         <div class="progressMiCarrito">
                             <h5>Mi carrito</h5>
@@ -150,6 +151,55 @@
                     <div class="progress progress2">
                         <div class="determinate" style="width: 66%">
                         <p class="bola"></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dataForm">
+                <div class="col-8 formDataCompra">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6 col-md-6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text">
+                                    <label for="icon_prefix">Nombre:</label>
+                                </div>
+                                <div class="input-field col s6 col-md-6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text">
+                                    <label for="icon_prefix">Apellido:</label>
+                                </div>
+                                <div class="input-field col-12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_prefix" type="email">
+                                    <label for="icon_prefix">Email:</label>
+                                </div>
+                                <div class="input-field col-12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="icon_telephone" type="tel">
+                                    <label for="icon_telephone">Telefono</label>
+                                </div>
+                                <a class="btn tooltipped comprar-datos" data-position="bottom">Pagar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4 formResumenCompra">
+                    <div class="row">
+                        <h5>Resumen de la compra</h5>
+                        <table class="table">
+                            <hr></hr>
+                            <tbody id="productosCarritoDataPage"></tbody>
+                        </table>
+                        <hr></hr>
+                        <div class="totalFooter">
+                            <div class="col-md-8 col-xs-8">
+                                <p class="total-datos"><strong>TOTAL:</strong></p>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <p class="numero-total"><strong id="pageDatosTotal"></strong></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

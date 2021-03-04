@@ -33,10 +33,12 @@ function goToId() {
 function mostrarCarrito() {
     document.getElementById('navFix').style.position= 'unset';
     let barraProgressCarrito = document.getElementById('barraProgressCarrito');
+    let btnCarrito = document.getElementById('buttonsCarrito');
     let auxCarrito = ``
     let tfoot = document.querySelector('tfoot');
         if (carrito.length !== 0) {
             for (let i = 0; i < carrito.length; i++) {
+                    btnCarrito.style.display = 'block';
                     barraProgressCarrito.style.display = 'block'
                     tfoot.style.display = 'table-footer-group'
                     auxCarrito += `
@@ -51,7 +53,8 @@ function mostrarCarrito() {
                     precioTotal()
             }
         }else {
-            barraProgressCarrito.style.display = 'none'
+            btnCarrito.style.display = 'none';
+            barraProgressCarrito.style.display = 'none';
             tfoot.style.display = 'none'
             auxCarrito += `
             <div class="carritoVacio">
@@ -63,7 +66,6 @@ function mostrarCarrito() {
 }
 
 
-
 function vaciarElCarrito() {
     let contador = document.getElementById('contador')
         carrito = [];
@@ -72,12 +74,12 @@ function vaciarElCarrito() {
         contador.innerHTML ='0'
 }
 
-function eliminarProducto() {
-    for (let i = 0; i < carrito.length; i++) {
-        console.log('llega hasta aca');
-        localStorage.removeItem(i)
-    }
-}
+// function eliminarProducto() {
+//     for (let i = 0; i < carrito.length; i++) {
+//         console.log('llega hasta aca');
+//         localStorage.removeItem(i)
+//     }
+// }
 
 function precioTotal() {
     let sumaPrecioTotal = document.getElementById('precioTotal');
@@ -87,6 +89,7 @@ function precioTotal() {
         suma = Number(suma) + Number(precio)
     }
     sumaPrecioTotal.innerHTML = `$${suma}`;
+    document.getElementById('pageDatosTotal').innerHTML = `$${suma}`;
 }
 
 

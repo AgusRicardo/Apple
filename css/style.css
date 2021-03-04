@@ -407,7 +407,63 @@ tfoot {
   margin-right: 2px; }
 
 .btn {
-  padding: 3px 10px 3px 10px; }
+  padding: 8px 10px 10px 8px; }
+
+.dataForm {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  padding: 30px; }
+  .dataForm .formResumenCompra {
+    text-align: center; }
+    .dataForm .formResumenCompra hr {
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto; }
+
+.pagDatoImg {
+  width: 50px; }
+
+.formDataCompra {
+  padding: 40px; }
+
+.formResumenCompra {
+  padding: 40px;
+  border: 1px solid;
+  border-color: #ddd; }
+  .formResumenCompra p {
+    margin-bottom: 0; }
+
+.noBorder {
+  border: none;
+  border-style: hidden; }
+
+.total-datos {
+  background-color: #f5f5f5;
+  height: 40px;
+  padding: 10px;
+  text-align: end; }
+
+.numero-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  height: 40px;
+  padding: 10px; }
+
+.totalFooter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  border: 1px solid;
+  border-color: #ddd;
+  padding: 0; }
+
+.pageDatosBarra {
+  margin-top: 115px; }
 
 #loading {
   display: none;
@@ -592,7 +648,7 @@ form img {
     .header_nav .nav_menu a {
       color: white;
       font-size: 20px;
-      padding: 0px 8px 0px 8px !important; }
+      padding: 0px 10px 0px 10px !important; }
     .header_nav .nav_menu a:hover {
       color: black; }
     .header_nav .nav_menu .nav-link {
@@ -711,11 +767,11 @@ form img {
 .buttonsCarrito {
   text-align: end; }
 
-.comprar {
+.comprar, .comprar-datos {
   background-color: #4cd964;
   color: white;
   margin: 8px 12px 8px 0px; }
-  .comprar:hover {
+  .comprar:hover, .comprar-datos:hover {
     background-color: #b2b2b2;
     color: black; }
 
@@ -735,11 +791,12 @@ form img {
   text-align: center; }
 
 .progress {
-  width: 600px;
+  width: 550px;
   margin-left: auto;
   margin-right: auto;
-  height: 10px;
-  border: 0.1px solid #b2b2b2; }
+  height: 8px;
+  border: 0.1px solid #b2b2b2;
+  margin-bottom: 30px; }
   .progress .determinate {
     display: flex;
     flex-flow: row wrap;
@@ -759,7 +816,7 @@ form img {
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-top: 20px; }
-  .progressTitle h5 {
+  .progressTitle p {
     margin-bottom: 0; }
 
 .cards-productos-index {

@@ -451,5 +451,66 @@ tfoot{
     margin-right: 2px;
 }
 .btn {
-    padding: 3px 10px 3px 10px;
+    padding: 8px 10px 10px 8px;
+}
+
+// Page Datos
+.dataForm {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.50);
+    background-color: white;
+    padding: 30px;
+    .formResumenCompra {
+        text-align: center;
+        hr {
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.pagDatoImg {
+    width: 50px;
+}
+.formDataCompra {
+    padding: 40px;
+}
+.formResumenCompra {
+    padding: 40px;
+    border: 1px solid;
+    border-color: #ddd;
+    p {
+        margin-bottom: 0;
+    }
+}
+.noBorder {
+    border:none;
+    border-style: hidden;
+}
+.total-datos{
+    background-color: #f5f5f5;
+    height: 40px;
+    padding: 10px;
+    text-align: end;
+}
+.numero-total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+}
+.totalFooter{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border: 1px solid;
+    border-color: #ddd;
+    padding: 0;
+}
+.pageDatosBarra {
+    margin-top: 115px;
 }
