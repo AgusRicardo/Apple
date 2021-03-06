@@ -346,8 +346,19 @@ form img {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    .card-title{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
     .cartas {
-        max-width: 200px;
+        max-width: 290px;
+        text-align: center;
+        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        .card-text {
+            font-size: 18px;
+            color: $color-nav;
+        }
     }
     .box-icon {
         border: 1px solid $color-nav;
@@ -361,7 +372,7 @@ form img {
         @extend .box-icon
     }
     img {
-        width: 200px;
+        width: 170px;
     }
 }
 .iconos-grandes-texto {

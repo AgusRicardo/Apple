@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #pageMac, #pageIpad, #pageIphone, #pageWatch, #pageMusic, #loading, #pageDatos {
   display: none; }
 
@@ -385,14 +386,26 @@ tfoot {
   text-align: center;
   width: 10px; }
 
+.carritoCantidad {
+  max-width: 45px;
+  text-align: center; }
+
 .eliminarProducto {
   font-size: 12px;
   border: none;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25); }
+  .eliminarProducto:focus {
+    background-color: white; }
+
+.modalSeAgregó {
+  color: black;
+  font-size: 18px;
+  padding: 15px; }
 
 .btn-primary {
   color: white;
   background-color: #09ae85;
+  line-height: 1.0;
   border: #09ae85;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25); }
   .btn-primary:hover {
@@ -853,14 +866,23 @@ form img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly; }
+  .iconos-grandes .card-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px; }
   .iconos-grandes .cartas {
-    max-width: 200px; }
+    max-width: 290px;
+    text-align: center;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
+    .iconos-grandes .cartas .card-text {
+      font-size: 18px;
+      color: #575757; }
   .iconos-grandes .box-icon, .iconos-grandes .help-icon, .iconos-grandes .money-icon {
     border: 1px solid #575757;
     border-radius: 50%;
     padding: 35px; }
   .iconos-grandes img {
-    width: 200px; }
+    width: 170px; }
 
 .iconos-grandes-texto {
   display: flex;

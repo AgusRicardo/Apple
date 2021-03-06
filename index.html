@@ -44,10 +44,10 @@
                                     <a class="nav-link" id="btn-music" onclick="mostrarMusic()">Music</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Support</a>
+                                    <a class="nav-link" href="https://support.apple.com/" target="_blank">Support</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Contact</a>
+                                    <a class="nav-link" href="https://www.apple.com/contact/" target="_blank">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -161,17 +161,17 @@
                             <div class="row">
                                 <div class="input-field col s6 col-md-6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="icon_prefix" type="text">
+                                    <input type="text">
                                     <label for="icon_prefix">Nombre:</label>
                                 </div>
                                 <div class="input-field col s6 col-md-6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="icon_prefix" type="text">
+                                    <input type="text">
                                     <label for="icon_prefix">Apellido:</label>
                                 </div>
                                 <div class="input-field col-12">
                                     <i class="material-icons prefix">email</i>
-                                    <input id="icon_prefix" type="email">
+                                    <input type="email">
                                     <label for="icon_prefix">Email:</label>
                                 </div>
                                 <div class="input-field col-12">
@@ -179,7 +179,15 @@
                                     <input id="icon_telephone" type="tel">
                                     <label for="icon_telephone">Telefono</label>
                                 </div>
-                                <a class="btn tooltipped comprar-datos" data-position="bottom">Pagar</a>
+                                <form>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Acepto las condiciones del servicio y la Política de Apple ARG</span>
+                                        </label>
+                                    </p>
+                                </form>
+                                <a class="btn tooltipped comprar-datos" data-position="bottom" id="btn-pagar">Pagar</a>
                             </div>
                         </form>
                     </div>
@@ -407,20 +415,23 @@
                 <div class="card-group iconos-grandes" id="iconosGrandes"> 
                     <div class="cartas">
                         <img src="./img/big-icon/big-icon-send-box.png" class="card-img-top box-icon" alt="...">
+                        <p class="card-title">Envíos gratis</p>
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Y devoluciones gratuitas. Consulte el pago para conocer las fechas de entrega.</p>
                         </div>
                     </div>
                     <div class="cartas">
                         <img src="./img/big-icon/big-icon-money.png" class="card-img-top money-icon" alt="...">
+                        <p class="card-title">Cuotas mensuales</p>
                         <div class="card-body">
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">Puede pagar a lo largo del tiempo con las cuotas mensuales de la Apple Card o con su proveedor.</p>
                         </div>
                     </div>
                     <div class="cartas">
                         <img src="./img/big-icon/big-help.png" class="card-img-top help-icon" alt="...">
+                        <p class="card-title">¿Tenés alguna pregunta?</p>
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text">Nuestros especialistas responderán tus preguntas.</p>
                         </div>
                     </div>
                 </div>

@@ -5,13 +5,17 @@ if (localStorage.getItem('carrito') != null) {
     document.getElementById('contador').innerHTML = `${carrito.length}`;
 }
 
+
 function agregarAlCarrito (producto) {
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito))
-    let aux = 0
+    const seAgregó = '<span class="modalSeAgregó">Se agregó un producto al carrito! <i class="fas fa-shopping-bag"></i></span>';
+    M.toast({html: seAgregó});
+    let aux = 0;
     for (let i = 0; i < carrito.length; i++) {
         aux += carrito[i].precio
     }
+    console.log(producto);
     document.getElementById('contador').innerHTML = `${carrito.length}`;
 }
 
@@ -29,7 +33,7 @@ function goToId() {
 
 
 // Para que se muestren los productos en el carrito
-
+let cantidad = 1;
 function mostrarCarrito() {
     document.getElementById('navFix').style.position= 'unset';
     let barraProgressCarrito = document.getElementById('barraProgressCarrito');
@@ -45,9 +49,9 @@ function mostrarCarrito() {
                     <tr>
                     <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
                     <td>${carrito[i].nombre}</td>
-                    <td>1</td>
+                    <td><input type="tel" class="carritoCantidad" id="inputCantidad">${cantidad}</td>
                     <td>$${carrito[i].precio}</td>
-                    <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
+                    <td><button class="eliminarProducto" onclick="bntEliminarProducto()"><i class="fas fa-times"></i></button></td>
                     </tr>
                     `
                     precioTotal()
@@ -66,6 +70,7 @@ function mostrarCarrito() {
 }
 
 
+
 function vaciarElCarrito() {
     let contador = document.getElementById('contador')
         carrito = [];
@@ -73,13 +78,6 @@ function vaciarElCarrito() {
         mostrarCarrito()
         contador.innerHTML ='0'
 }
-
-// function eliminarProducto() {
-//     for (let i = 0; i < carrito.length; i++) {
-//         console.log('llega hasta aca');
-//         localStorage.removeItem(i)
-//     }
-// }
 
 function precioTotal() {
     let sumaPrecioTotal = document.getElementById('precioTotal');
@@ -91,5 +89,32 @@ function precioTotal() {
     sumaPrecioTotal.innerHTML = `$${suma}`;
     document.getElementById('pageDatosTotal').innerHTML = `$${suma}`;
 }
+
+
+
+// Para agregarle mercado pago
+let btnPagar = document.getElementById('btn-pagar').addEventListener('click', () => {
+    $.ajax({
+        url: 'https://api.mercadopago.com/checkout/preferences?access_token=TEST-399222293246790-030521-1554b3c6084b495851ae0a772bb56f07-147769170',
+        type: 'POST',
+        data: JSON.stringify({
+            "items": [
+                {
+                    "title": "Producto",
+                    "description": "Líquido 60ml",
+                    "quantity": 1,
+                    "currency_id": "ARS",
+                    "unit_price": 10.0
+                }
+            ]
+        }),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        success : function(data){
+            console.info(data);
+        }
+    });
+})
 
 
