@@ -9,15 +9,21 @@ if (localStorage.getItem('carrito') != null) {
 function agregarAlCarrito (producto) {
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito))
+        for (let i = 0; i < carrito.length -1; i++) {
+            if (producto.nombre == carrito[i].nombre) {
+                console.log('Se repitió un producto');
+                carrito[i].cantidad ++;
+                carrito[i].precio = carrito[i].precio * 2;
+                carrito.pop()
+                precioTotal()
+                return;
+            }
+        }
     const seAgregó = '<span class="modalSeAgregó">Se agregó un producto al carrito! <i class="fas fa-shopping-bag"></i></span>';
     M.toast({html: seAgregó});
-    let aux = 0;
-    for (let i = 0; i < carrito.length; i++) {
-        aux += carrito[i].precio
-    }
-    console.log(producto);
     document.getElementById('contador').innerHTML = `${carrito.length}`;
 }
+
 
 // Para que se abra el carrito
 $(document).ready(function(){
@@ -26,6 +32,7 @@ $(document).ready(function(){
     });
 });
 
+// Para que el boton flotante recorra el index
 function goToId() {
     const element = document.getElementById('body');
     element.scrollIntoView({behavior: "smooth"});
@@ -33,28 +40,28 @@ function goToId() {
 
 
 // Para que se muestren los productos en el carrito
-let cantidad = 1;
 function mostrarCarrito() {
     document.getElementById('navFix').style.position= 'unset';
     let barraProgressCarrito = document.getElementById('barraProgressCarrito');
     let btnCarrito = document.getElementById('buttonsCarrito');
     let auxCarrito = ``
     let tfoot = document.querySelector('tfoot');
+    console.log(carrito);
         if (carrito.length !== 0) {
             for (let i = 0; i < carrito.length; i++) {
-                    btnCarrito.style.display = 'block';
-                    barraProgressCarrito.style.display = 'block'
-                    tfoot.style.display = 'table-footer-group'
-                    auxCarrito += `
-                    <tr>
-                    <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
-                    <td>${carrito[i].nombre}</td>
-                    <td><input type="tel" class="carritoCantidad" id="inputCantidad">${cantidad}</td>
-                    <td>$${carrito[i].precio}</td>
-                    <td><button class="eliminarProducto" onclick="bntEliminarProducto()"><i class="fas fa-times"></i></button></td>
-                    </tr>
-                    `
-                    precioTotal()
+                btnCarrito.style.display = 'block';
+                barraProgressCarrito.style.display = 'block'
+                tfoot.style.display = 'table-footer-group'
+                auxCarrito += `
+                <tr class="productoCarrito">
+                <td class="td-img"><img src="${carrito[i].imagen}" class="img-carrito"></td>
+                <td>${carrito[i].nombre}</td>
+                <td>${carrito[i].cantidad}</td>
+                <td id="precio">$${carrito[i].precio}</td>
+                <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
+                </tr>
+                `
+                precioTotal()
             }
         }else {
             btnCarrito.style.display = 'none';
@@ -69,7 +76,12 @@ function mostrarCarrito() {
     document.getElementById('productoEnCarrito').innerHTML = auxCarrito ;
 }
 
-
+function eliminarProducto() {
+        console.log('se apreto');
+        let productoCarrito = document.querySelector('.productoCarrito')
+        productoCarrito.remove()
+        precioTotal()                      
+}
 
 function vaciarElCarrito() {
     let contador = document.getElementById('contador')

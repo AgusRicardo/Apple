@@ -2,6 +2,7 @@
     "macbooks": [
         {
             "id": 1,
+            "cantidad": 1,
             "nombre": "iMac",
             "precio": "1099",
             "imagen": "https://www.apple.com/v/imac/k/images/site/compare_imac_27__bxqbs5os9dhy_medium.jpg",
@@ -14,6 +15,7 @@
         },
         {
             "id": 2,
+            "cantidad": 1,
             "nombre": "Macbook Air",
             "precio": "999",
             "imagen": "https://www.apple.com/v/mac/home/ba/images/overview/compare/macbook_air__bfz9o93hnyuq_large.jpg",
@@ -26,6 +28,7 @@
         },
         {
             "id": 3,
+            "cantidad": 1,
             "nombre": "Macbook Pro 13",
             "precio": "1299",
             "imagen": "https://www.apple.com/v/mac/home/ba/images/overview/compare/macbook_pro_13__ft1pc3lqwd6y_large.jpg",
@@ -38,6 +41,7 @@
         },
         {
             "id": 4,
+            "cantidad": 1,
             "nombre": "Macbook Pro 16",
             "precio": "2399",
             "imagen": "https://www.apple.com/v/mac/home/ba/images/overview/compare/macbook_pro_16__x90efpvdutu6_large.jpg",
@@ -52,6 +56,7 @@
     "ipad":[
         {
             "id": 5,
+            "cantidad": 1,
             "nombre": "iPad",
             "precio": "329",
             "descripcion": "",
@@ -63,6 +68,7 @@
         },
         {
             "id": 6,
+            "cantidad": 1,
             "nombre": "iPad Mini",
             "precio": "399",
             "descripcion": "",
@@ -74,6 +80,7 @@
         },
         {
             "id": 7,
+            "cantidad": 1,
             "nombre": "iPad Air",
             "precio": "599",
             "descripcion": "",
@@ -85,6 +92,7 @@
         },
         {
             "id": 8,
+            "cantidad": 1,
             "nombre": "iPad Pro",
             "precio": "799",
             "descripcion": "",
@@ -98,6 +106,7 @@
     "iphone": [
         {
             "id": 10,
+            "cantidad": 1,
             "nombre": "iPhone 12 Mini",
             "precio": "699",
             "descripcion": "",
@@ -109,6 +118,7 @@
         },
         {
             "id": 11,
+            "cantidad": 1,
             "nombre": "iPhone 12",
             "precio": "799",
             "descripcion": "",
@@ -120,6 +130,7 @@
         },
         {
             "id": 12,
+            "cantidad": 1,
             "nombre": "iPhone 12 Pro",
             "precio": "999",
             "descripcion": "",
@@ -133,6 +144,7 @@
     "watch": [
         {
             "id": 13,
+            "cantidad": 1,
             "nombre": "Apple Watch Series 3",
             "precio": "199",
             "descripcion": "",
@@ -143,6 +155,7 @@
         },
         {
             "id": 14,
+            "cantidad": 1,
             "nombre": "Apple Watch SE",
             "precio": "279",
             "descripcion": "",
@@ -153,6 +166,7 @@
         },
         {
             "id": 15,
+            "cantidad": 1,
             "nombre": "Apple Watch Series 6",
             "precio": "399",
             "descripcion": "",
@@ -165,6 +179,7 @@
     "music": [
         {
             "id": 16,
+            "cantidad": 1,
             "nombre": "AirPods",
             "precio": "199",
             "descripcion": "",
@@ -174,6 +189,7 @@
         },
         {
             "id": 17,
+            "cantidad": 1,
             "nombre": "AirPods Pro",
             "precio": "249",
             "descripcion": "",
@@ -183,6 +199,7 @@
         },
         {
             "id": 18,
+            "cantidad": 1,
             "nombre": "AirPods Max",
             "precio": "549",
             "descripcion": "",
@@ -192,6 +209,7 @@
         },
         {
             "id": 19,
+            "cantidad": 1,
             "nombre": "HomePod mini",
             "precio": "99",
             "descripcion": "",
