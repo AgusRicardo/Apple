@@ -2,6 +2,9 @@
 #pageMac, #pageIpad, #pageIphone, #pageWatch, #pageMusic, #loading, #pageDatos {
   display: none; }
 
+.error {
+  display: none; }
+
 .img-portada-mac {
   background-image: url("../img/portadas/macbook_.jpg");
   height: 85vh;
@@ -931,3 +934,6 @@ form img {
 
 .proyecto h5 {
   font-size: 14px; }
+
+.error {
+  color: red; }

@@ -161,17 +161,17 @@
                             <div class="row">
                                 <div class="input-field col s6 col-md-6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input type="text">
+                                    <input type="text" id="inputName">
                                     <label for="icon_prefix">Nombre:</label>
                                 </div>
                                 <div class="input-field col s6 col-md-6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input type="text">
+                                    <input type="text" id="inputApellido">
                                     <label for="icon_prefix">Apellido:</label>
                                 </div>
                                 <div class="input-field col-12">
                                     <i class="material-icons prefix">email</i>
-                                    <input type="email">
+                                    <input type="email" id="inputEmail">
                                     <label for="icon_prefix">Email:</label>
                                 </div>
                                 <div class="input-field col-12">
@@ -182,10 +182,13 @@
                                 <form>
                                     <p>
                                         <label>
-                                            <input type="checkbox" />
+                                            <input type="checkbox" id="inputCheck" required/>
                                             <span>Acepto las condiciones del servicio y la Política de Apple ARG</span>
                                         </label>
                                     </p>
+                                    <div class="error">
+                                        <p>ERROR: Complete todos los datos por favor</p>
+                                    </div>
                                 </form>
                                 <a class="btn tooltipped comprar-datos" data-position="bottom" id="btn-pagar">Pagar</a>
                             </div>

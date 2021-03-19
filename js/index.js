@@ -46,7 +46,6 @@ function mostrarCarrito() {
     let btnCarrito = document.getElementById('buttonsCarrito');
     let auxCarrito = ``
     let tfoot = document.querySelector('tfoot');
-    console.log(carrito);
         if (carrito.length !== 0) {
             for (let i = 0; i < carrito.length; i++) {
                 btnCarrito.style.display = 'block';
@@ -58,7 +57,7 @@ function mostrarCarrito() {
                 <td>${carrito[i].nombre}</td>
                 <td>${carrito[i].cantidad}</td>
                 <td id="precio">$${carrito[i].precio}</td>
-                <td><button class="eliminarProducto" onclick="eliminarProducto()"><i class="fas fa-times"></i></button></td>
+                <td></td>
                 </tr>
                 `
                 precioTotal()
@@ -76,12 +75,6 @@ function mostrarCarrito() {
     document.getElementById('productoEnCarrito').innerHTML = auxCarrito ;
 }
 
-function eliminarProducto() {
-        console.log('se apreto');
-        let productoCarrito = document.querySelector('.productoCarrito')
-        productoCarrito.remove()
-        precioTotal()                      
-}
 
 function vaciarElCarrito() {
     let contador = document.getElementById('contador')
@@ -104,29 +97,51 @@ function precioTotal() {
 
 
 
-// Para agregarle mercado pago
+
+
 let btnPagar = document.getElementById('btn-pagar').addEventListener('click', () => {
-    $.ajax({
-        url: 'https://api.mercadopago.com/checkout/preferences?access_token=TEST-399222293246790-030521-1554b3c6084b495851ae0a772bb56f07-147769170',
-        type: 'POST',
-        data: JSON.stringify({
-            "items": [
-                {
-                    "title": "Producto",
-                    "description": "Líquido 60ml",
-                    "quantity": 1,
-                    "currency_id": "ARS",
-                    "unit_price": 10.0
-                }
-            ]
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        success : function(data){
-            console.info(data);
-        }
-    });
+    let error =  document.querySelector('.error')
+    let inputname = document.getElementById('inputName').value;
+    let inputApellido = document.getElementById('inputApellido').value;
+    let inputEmail = document.getElementById('inputEmail').value;
+    let inputTel = document.getElementById('icon_telephone').value;
+    let inputCheck = document.getElementById('inputCheck');
+    if (((inputname && inputApellido && inputEmail && inputTel) != '') && inputCheck.checked) {
+        alert('Gracias por su compra');
+        pageDatos.style.display = 'none';
+        loading.style.display = 'flex';
+        vaciarElCarrito()
+        setTimeout(() =>{
+            loading.style.display = 'none';
+            pageIndex.style.display = 'block';
+            subMenu.style.display = 'flex';
+            document.getElementById('navFix').style.position= 'fixed';
+        }, 1200)
+    }else {
+        error.style.display = 'block'
+    }
+    // e.preventDefault()
+    // $.ajax({
+    //     url: 'https://api.mercadopago.com/checkout/preferences?access_token=TEST-399222293246790-030521-1554b3c6084b495851ae0a772bb56f07-147769170',
+    //     type: 'POST',
+    //     data: JSON.stringify({
+    //         "items": [
+    //             {
+    //                 "title": "Producto",
+    //                 "description": "Líquido 60ml",
+    //                 "quantity": 1,
+    //                 "currency_id": "ARS",
+    //                 "unit_price": 10.0
+    //             }
+    //         ]
+    //     }),
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     success : function(data){
+    //         console.info(data);
+    //     }
+    // });
 })
 
 
