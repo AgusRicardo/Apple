@@ -107,7 +107,7 @@ let btnPagar = document.getElementById('btn-pagar').addEventListener('click', ()
     let inputTel = document.getElementById('icon_telephone').value;
     let inputCheck = document.getElementById('inputCheck');
     if (((inputname && inputApellido && inputEmail && inputTel) != '') && inputCheck.checked) {
-        alert('Gracias por su compra');
+        alert('Gracias por su compra!!. La api de MercadoPago me dió muchos problemas :(');
         pageDatos.style.display = 'none';
         loading.style.display = 'flex';
         vaciarElCarrito()
